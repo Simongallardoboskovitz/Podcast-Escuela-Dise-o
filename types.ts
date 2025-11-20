@@ -6,7 +6,7 @@ export enum DesignSpecialization {
 }
 
 export interface PodcastFormInputs {
-  specialization: DesignSpecialization;
+  specialization: string;
   hostName: string;
   hostRole: string;
   guestName: string;

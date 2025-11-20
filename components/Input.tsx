@@ -7,13 +7,13 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 const Input: React.FC<InputProps> = ({ label, name, ...props }) => {
   return (
     <div className="flex flex-col space-y-2">
-      <label htmlFor={name} className="text-sm font-medium text-brand-dark/80">
+      <label htmlFor={name} className="text-sm font-medium text-brand-beige/80">
         {label}
       </label>
       <input
         id={name}
         name={name}
-        className="w-full px-1 py-2 bg-transparent border-0 border-b-2 border-brand-dark/20 rounded-none focus:outline-none focus:ring-0 focus:border-brand-orange transition-colors duration-300 placeholder-brand-dark/30 text-lg"
+        className="w-full px-1 py-2 bg-transparent border-0 border-b border-brand-beige/20 rounded-none focus:outline-none focus:ring-0 focus:border-brand-orange transition-colors duration-300 placeholder-brand-beige/30 text-lg text-brand-beige"
         {...props}
       />
     </div>

@@ -127,17 +127,17 @@ const StructureDisplay: React.FC<StructureDisplayProps> = ({ structure, episodeT
 
   return (
     <div className="w-full max-w-2xl mx-auto">
-        <div className="bg-[#FDFDFC] p-8 sm:p-12 rounded-2xl shadow-sm border border-black/5">
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tighter mb-2 text-center">"{episodeTitle}"</h1>
-            <p className="text-lg text-brand-dark/60 mb-10 text-center">Una pauta para encender la conversación.</p>
+        <div className="bg-zinc-900 p-8 sm:p-12 rounded-2xl shadow-sm border border-white/10">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-beige tracking-tighter mb-2 text-center">"{episodeTitle}"</h1>
+            <p className="text-lg text-brand-beige/60 mb-10 text-center">Una pauta para encender la conversación.</p>
             
             <div className="space-y-10">
               {parsedSections.map((section, sectionIndex) => (
                 <div key={sectionIndex}>
-                  <h2 className="text-2xl font-bold text-brand-dark mb-4 tracking-tight">{section.title}</h2>
+                  <h2 className="text-2xl font-bold text-brand-beige mb-4 tracking-tight">{section.title}</h2>
                   <ul className="list-none space-y-3">
                     {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start text-brand-dark/90 leading-relaxed text-lg">
+                      <li key={itemIndex} className="flex items-start text-brand-beige/90 leading-relaxed text-lg">
                         <span className="text-brand-orange font-bold mr-3 text-xl">·</span>
                         <span>{item}</span>
                       </li>
@@ -151,12 +151,12 @@ const StructureDisplay: React.FC<StructureDisplayProps> = ({ structure, episodeT
             <Button onClick={handleDownloadPDF}>Descargar PDF</Button>
             <button
                 onClick={handleCopyText}
-                className="w-full px-6 py-4 bg-transparent text-brand-dark font-bold rounded-lg hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-beige focus:ring-brand-dark/50 transition-all duration-300 transform active:scale-95">
+                className="w-full px-6 py-4 bg-transparent text-brand-beige font-bold rounded-lg hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-brand-beige/50 transition-all duration-300 transform active:scale-95 border border-white/10">
                 {isCopied ? '¡Copiado!' : 'Copiar Texto'}
             </button>
             <button 
                 onClick={onReset} 
-                className="w-full px-6 py-4 bg-transparent text-brand-dark font-bold rounded-lg hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-beige focus:ring-brand-dark/50 transition-colors duration-300 transform active:scale-95">
+                className="w-full px-6 py-4 bg-transparent text-brand-beige font-bold rounded-lg hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-brand-beige/50 transition-colors duration-300 transform active:scale-95 border border-white/10">
                 Crear otra
             </button>
       </div>
