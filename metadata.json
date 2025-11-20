@@ -1,6 +1,6 @@
 {
-  "name": "ALTA VOZ",
-  "description": "Una aplicación con IA que genera pautas de conversación para ALTA VOZ, un podcast de la Escuela de Diseño. Ingresa los datos y descarga un PDF con ideas para romper el hielo.",
+  "name": "ALTAVOZ",
+  "description": "Una aplicación con IA que genera pautas de conversación para ALTAVOZ, el Vodcast de la Escuela de Diseño. Ingresa los datos y descarga un PDF con ideas para romper el hielo.",
   "requestFramePermissions": [],
   "prompt": ""
 }

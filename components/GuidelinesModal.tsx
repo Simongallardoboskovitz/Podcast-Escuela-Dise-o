@@ -49,7 +49,7 @@ const GuidelinesModal: React.FC<GuidelinesModalProps> = ({
                         Lineamientos Editoriales
                     </h2>
                     <p className="text-brand-beige/60 mt-2 text-sm sm:text-base">
-                        Directrices esenciales para el Vodcast ALTA VOZ.
+                        Directrices esenciales para el Vodcast ALTAVOZ.
                     </p>
                 </div>
 

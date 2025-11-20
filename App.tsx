@@ -81,8 +81,8 @@ const App: React.FC = () => {
         {!generatedStructure && !isLoading && !error && (
           <>
             <div className="animate-fade-in text-center">
-              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tighter mb-4 text-brand-beige">ALTA VOZ</h1>
-              <p className="text-brand-beige/60 mt-2 mb-10 text-lg">Un Podcast de la Escuela de Diseño</p>
+              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tighter mb-4 text-brand-beige">ALTAVOZ</h1>
+              <p className="text-brand-beige/60 mt-2 mb-10 text-lg">El Vodcast de la Escuela de Diseño</p>
               
               <form onSubmit={(e) => e.preventDefault()} className="space-y-8 text-left">
                   <Input label="Nombre Host" name="hostName" value={formState.hostName} onChange={handleInputChange} placeholder="Ej: Pancho Malo" required />
